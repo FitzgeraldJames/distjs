@@ -15,11 +15,10 @@ io.on('connection', (socket) => {
   socket.id = uuid4();
   //create node custom node object to manage instances
   nodes.push(socket);
-  console.log(nodes);
   console.log(socket.id + ': user connected');
 
-  socket.on('', () => {
-
+  socket.on('sendJob', () => {
+    workDelegator.job()
   });
 
   socket.on('disconnect', () => {
