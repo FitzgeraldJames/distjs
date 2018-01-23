@@ -10,13 +10,13 @@ class Node {
     this.userAgent = socket.request.headers['user-agent'];
   }
   /**
-   * @return {number} uptime in seconds
+   * @return {number} uptime in milliseconds
    */
   get upTime(){
     return Date.getTime() - this.connectTime;
   }
   /**
-   * Returns a JSON object with all the info of the Node
+   * @return {object} returns an object with all the data from instance
    */
   serialize() {
 		return {
