@@ -4,7 +4,9 @@ class workDelagator {
    *
    */
   constructor() {
-
+    this.job = null
   }
 
 }
+
+module.exports = workDelagator
