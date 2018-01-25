@@ -37,7 +37,7 @@ class Node {
 		return {
 			id: this.id,
 			connectTime: this.connectTime,
-      upTime: this.uptime,
+      upTime: this.upTime,
       userAgent: this.userAgent,
       alive: this.alive,
     };
